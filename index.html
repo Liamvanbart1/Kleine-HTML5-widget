@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage Opdracht</title>
+</head>
+<body>
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>tijd</th>
+                    <th>bestemming</th>
+                    <th>vlucht</th>
+                    <th>maatschappij</th>
+                    <th>status</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <ul>
+            <li>Logo</li>
+            <li id="klok">
+                klok
+            </li>
+            <li>
+                <button>
+                    Menu
+                </button>
+            </li>
+            <li>Vertrek</li>
+        </ul>
+    </section>
+    <section>
+        <ul>
+            <li>
+                <label for="kleur vernaderen">Eerste kleur veranderen</label>
+                <input type="color" id="kleurvernaderen" name="kleur vernaderen" value="#214F89"
+                    onchange="veranderKleur('--main-color', this.value)">
+            </li>
+            <li>
+                <label for="kleur vernaderen">Tweede kleur veranderen</label>
+                <input type="color" id="kleurvernaderen" name="kleur vernaderen" value="#666666"
+                    onchange="veranderKleur('--secondary-color', this.value)">
+            </li>
+            <li>
+                <label for="interval">Vluchtdata tijd</label>
+                <input type="range" id="interval" value="5" min="1" max="60" step="1" />
+                <span id="interval-value">5</span> seconden
+            </li>
+            <li>
+                <button>Menu sluiten</button>
+            </li>
+        </ul>
+    </section>
+<script src="script.js"></script>
+</body>
+</html>
